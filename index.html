@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <div class="flex justify-between sticky top-0 bg-white">
+    <div class="flex justify-between fixed top-0 bg-white z-[99] w-full">
       <!-- logo -->
       <div>
         <div class="flex ml-10 pl-10">
@@ -42,7 +42,20 @@
     </div>
     <!-- main image -->
     <div>
-      <img class="w-full" src="./images/main.webp" alt="" />
+      <img class="w-full relative" src="./images/main.webp" alt="" />
+      <div class="absolute inset-0 mt-20 pt-20 pl-20 text-white">
+        <h2 class="text-3xl">ICONIC PRODUCTS</h2>
+        <h1 class="text-8xl">
+          Innovative <br />
+          Solutions
+        </h1>
+        <br />
+        <a href=""
+          ><h3 class="pl-5 pt-1 ml-10 mt-5 border-2 border-grey-200 w-32 h-10">
+            Explore More
+          </h3></a
+        >
+      </div>
     </div>
 
     <div class="bg-blue-950 italic text-amber-500 text-center py-7">
@@ -157,56 +170,119 @@
       <img src="./images/marinee services.png" alt="" />
       <img src="./images/marine model.png" alt="" />
     </div>
-    <br><br>
+    <br /><br />
     <!-- info -->
-    <div class="" >
-      <div class="flex justify-center gap-4 w-full bg-no-repeat bg-cover opacity-1" style="background-image: url(./images/bg\ img.jpg);">
-      <div >12+ <br>Clients <br>Nations</div>
-      <div>350+ <br>Completed <br>Projects</div>
-      <div>75+ <br>Satisfied <br>Customers</div>
-    </div>
+    <div class="">
+      <div
+        class="flex justify-center gap-4 w-full bg-no-repeat bg-cover opacity-1"
+        style="background-image: url(./images/bg\ img.jpg)"
+      >
+        <div>12+ <br />Clients <br />Nations</div>
+        <div>350+ <br />Completed <br />Projects</div>
+        <div>75+ <br />Satisfied <br />Customers</div>
+      </div>
     </div>
     <!-- projects -->
     <div class="flex justify-between">
-      <div class="flex-col w-1/3 h-1/3  shadow-[0_3px_10px_rgb(0,0,0,0.2)] mt-10 ml-32 justify-center items-center" >
-        <div class="w-5/6 ">
-        <img class="w-full h-1/2 " src="./images/project.png" alt="">
-        <h1 class="pt-10 text-4xl pl-3">OUR PROJECTS</h1>
-        <p class="mb-3 text-md leading-7 pt-3 pl-3">With our hardship, effort and the reliability that we offered to our customers, we built a numerous number of floating palaces around the globe.</p>
-        <button class="pl-3 pb-20">Explore more -></button>
+      <div
+        class="flex-col w-1/3 h-1/3 shadow-[0_3px_10px_rgb(0,0,0,0.2)] mt-10 ml-32 justify-center items-center"
+      >
+        <div class="w-5/6">
+          <img
+            class="w-full h-1/2 block justify-center"
+            src="./images/project.png"
+            alt=""
+          />
+          <h1 class="pt-10 text-4xl pl-3">OUR PROJECTS</h1>
+          <p class="mb-3 text-md leading-7 pt-3 pl-3">
+            With our hardship, effort and the reliability that we offered to our
+            customers, we built a numerous number of floating palaces around the
+            globe.
+          </p>
+          <button class="pl-3 pb-20">Explore more -></button>
+        </div>
       </div>
-      </div>
-      <div class="w-100 mt-20">
-        <div class="grid gap-7 px-6"></div>
-        <div class=" mb-16 relative flex flex-col justify-center items-center">
-          <img class="w-52" src="./images/floating dock analysis.jpeg" alt="">
-          <div class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8 ">
-            <h2 class="w-11/12 ">FLOATING DOCK ANALYSIS</h2>
+      <div class="w-1/2 mt-20">
+        <div class="grid gap-8 px-6 grid-cols-2">
+          <div class="mb-16 relative flex flex-col justify-center items-center">
+            <img
+              class="w-60 h-64"
+              src="./images/floating dock analysis.jpeg"
+              alt=""
+            />
+            <div
+              class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8"
+            >
+              <h2 class="w-11/12">FLOATING DOCK ANALYSIS</h2>
+            </div>
+          </div>
+
+          <div class="mb-16 relative flex flex-col justify-center items-center">
+            <img class="w-60 h-64" src="./images/jack up barrage.png" alt="" />
+            <div
+              class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8"
+            >
+              <h2 class="w-11/12">CONCEPT DESIGN OF JACKUP BARGE</h2>
+            </div>
+          </div>
+
+          <div class="mb-16 relative flex flex-col justify-center items-center">
+            <img class="w-52" src="./images/propeller.webp" alt="" />
+            <div
+              class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8"
+            >
+              <h2 class="w-11/12">CFD ANALYSIS OF PROPELLER</h2>
+            </div>
+          </div>
+
+          <div class="mb-16 relative flex flex-col justify-center items-center">
+            <img class="w-64 h-64" src="./images/yatch designing.webp" alt="" />
+            <div
+              class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8"
+            >
+              <h2 class="w-11/12">YACHT DESIGNING</h2>
+            </div>
           </div>
         </div>
-
-        <div class=" mb-16 relative flex flex-col justify-center items-center">
-          <img class="w-52" src="./images/jack up barrage.png" alt="">
-          <div class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8 ">
-            <h2 class="w-11/12 ">CONCEPT DESIGN OF JACKUP BARGE</h2>
-          </div>
-        </div>
-
-        <div class=" mb-16 relative flex flex-col justify-center items-center">
-          <img class="w-52" src="./images/propeller.webp" alt="">
-          <div class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8 ">
-            <h2 class="w-11/12 ">CFD ANALYSIS OF PROPELLER</h2>
-          </div>
-        </div>
-
-        <div class=" mb-16 relative flex flex-col justify-center items-center">
-          <img class="w-52" src="./images/yatch designing.webp" alt="">
-          <div class="w-4/5 h-20 flex justify-center items-center bg-yellow-300 font-bold text-center absolute -bottom-8 ">
-            <h2 class="w-11/12 ">YACHT DESIGNING</h2>
-          </div>
-        </div>
-
       </div>
     </div>
+    <br><br>
+
+    <!-- Testimonials -->
+    <div class="flex flex-col bg-blue-950 bg-opacity-90 ml-20 mr-20">
+      <h1 class="text-5xl text-center pt-10 text-white font-bold">TESTIMONIALS</h1>
+      <div class="flex flex-row justify-between h-96 ">
+      <div class=" bg-white w-1/2  ml-20 mb-10 mr-20 mt-20 flex flex-col justify-center items-center">
+        <img class="w-32 " src="./images/stars.jpg" alt="" />
+        <p class="font-bold text-xl">Good Work.Keep it up.</p><br>
+        <div class="flex flex-row divide-x">
+        <h3 class="text-xl w-1/2 pl-20 font-bold text-gray-900">Dr.J Latha</h3>
+        <p class="w-1/2 font-semibold text-gray-500 text-sm pl-5">Former Vice Chancellor,Cochin University of Science and Technology</p>
+      </div>
+      </div>
+      <div class="bg-white w-1/2  mr-20 mt-20 mb-10 flex flex-col justify-center items-center ">
+        <img class="w-32" src="./images/stars.jpg" alt="" />
+        <p class="pl-10 pr-10 font-bold text-xl">
+          It is heartening to see sea startups,the passion revealed in
+          innovativeness and out of box thought of establishing the marine
+          industry is well appreciated.Wishing a long way ahead in the
+          unexplored oceans.
+        </p>
+        
+      </div>
+    </div>
+    </div>
+    <br><br>
+
+  <!-- clients -->
+<h1 class="text-center text-5xl">OUR <span class="font-bold"> CLIENTS</span></h1>
+<div class="">
+  <img src="" alt="">
+</div>
+
+
+
+
+
   </body>
 </html>
